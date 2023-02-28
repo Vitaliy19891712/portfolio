@@ -1,0 +1,40 @@
+.contactsblock {
+  background-color: rgb(241, 123, 123);
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.formDiv {
+  width: 300px;
+}
+
+.nameBlock {
+  text-align: center;
+  border: 1px solid;
+  padding: 5px;
+}
+
+input {
+  width: 100%;
+}
+textarea {
+  width: 100%;
+  height: 80px;
+}
+
+.btn {
+  margin-top: 5px;
+}
