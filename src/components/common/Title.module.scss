@@ -1,0 +1,60 @@
+@import "../../styles/scss/variables.scss";
+
+.title {
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 1;
+  color: #a4acc4;
+  font-family: Nunito, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8rem;
+  & h2 {
+    font-weight: 700;
+    padding-bottom: 15px;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 2.57rem;
+    line-height: 3.2857rem;
+    color: $textMainColor;
+    font-family: Nunito, sans-serif;
+    &::before {
+      border-radius: 100px;
+      bottom: 0;
+      content: "";
+      height: 5px;
+      left: 0;
+      position: absolute;
+      top: auto;
+      background: rgba(3, 127, 255, 0.3);
+      width: 100px;
+    }
+    &::after {
+      border-radius: 100px;
+      bottom: 0;
+      content: "";
+      height: 5px;
+      left: 0;
+      position: absolute;
+      top: auto;
+      background: #037fff;
+      width: 35px;
+    }
+  }
+  & span {
+    // media
+    font-size: 4.2rem;
+    color: rgba(25, 29, 43, 0.44);
+    display: inline-block;
+    font-weight: 900;
+    left: 0;
+    line-height: 1;
+    position: absolute;
+    text-transform: uppercase;
+    top: 100%;
+    transform: translateY(-40%);
+    user-select: none;
+    white-space: nowrap;
+    z-index: -1;
+  }
+}

@@ -1,0 +1,123 @@
+@import "../../../styles/scss/variables.scss";
+
+.about {
+  background-color: $bgMainColor;
+  min-height: 100vh;
+  .container {
+    padding-top: 120px;
+    padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    .items {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      max-width: 100%;
+      .photo {
+        flex: 0 0 auto;
+        width: 50%;
+        .image {
+        }
+      }
+      .discription {
+        flex: 0 0 auto;
+        width: 50%;
+        padding-left: 12px;
+        padding-right: 12px;
+        .content {
+          & h3 {
+            font-weight: 600;
+            margin-top: -8px;
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+            line-height: 2.7rem;
+            color: $textMainColor;
+            font-family: Nunito, sans-serif;
+            & span {
+              color: $mainColor;
+            }
+          }
+          & p {
+            color: #a4acc4;
+            font-family: Nunito, sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.8rem;
+            margin-bottom: 1rem;
+            margin-top: 0;
+          }
+          & ul {
+            padding-left: 0;
+            margin-bottom: 1rem;
+            margin-top: 0;
+            color: $textPrimaryColor;
+            font-family: Nunito, sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.8rem;
+            & li {
+              display: flex;
+              list-style: none;
+              &:not(:last-child) {
+                margin-bottom: 3px;
+              }
+              & b {
+                display: inline-block;
+                margin-right: 7px;
+                min-width: 140px;
+                position: relative;
+                font-weight: bolder;
+                &::after {
+                  content: ":";
+                  left: auto;
+                  position: absolute;
+                  right: 0;
+                  top: 0;
+                }
+              }
+            }
+          }
+          & a {
+            margin-top: 15px;
+            background: $mainColor;
+            border: 0;
+            color: $textMainColor;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 0.9rem;
+            height: 50px;
+            letter-spacing: 2px;
+            line-height: 50px;
+            padding: 0 30px;
+            position: relative;
+            text-transform: uppercase;
+            transition: all 0.4s ease-out;
+            z-index: 1;
+            &:before {
+              background: $textMainColor;
+              bottom: 0;
+              content: "";
+              height: 2px;
+              left: 0;
+              position: absolute;
+              top: auto;
+              transform: scaleX(0);
+              transform-origin: 0 0;
+              transition: all 0.4s ease-out;
+              width: 100%;
+              z-index: -1;
+            }
+            &:hover {
+              color: $textMainColor;
+            }
+            &:hover::before {
+              transform: scaleX(1);
+            }
+          }
+        }
+      }
+    }
+  }
+}

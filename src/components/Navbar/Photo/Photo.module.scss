@@ -1,0 +1,21 @@
+
+.photo{
+    border-bottom: 1px solid #2e344e;
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    .wrapperPhoto{
+      background-image:url("../../../assets//photo.jpg ");
+      border: 7px solid #2e344e;
+      border-radius: 1000px;
+      display: inline-block;
+      height: 200px;
+      overflow: hidden;
+      vertical-align: middle;
+      width: 200px;
+}}
+
+
+
+

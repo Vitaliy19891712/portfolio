@@ -1,0 +1,16 @@
+@import "../../../styles/scss/variables.scss";
+
+.footer {
+  border-top: 1px solid $borderColor;
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0;
+  padding: 15px 0;
+  text-align: center;
+  width: 100%;
+  color: #a4acc4;
+  font-family: Nunito, sans-serif;
+  & span {
+    font-weight: bolder;
+  }
+}

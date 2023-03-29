@@ -1,0 +1,17 @@
+.app {
+  // display: flex;
+  .sidebarWrapper {
+    position: fixed;
+    width: 260px;
+    height: 100vh;
+  }
+  .main {
+    // width: calc(100% - 260px);
+    min-height: 100vh;
+    // position: absolute;
+    // top: 0;
+    padding-left: 260px;
+    // width: 100%;
+    left: 260px;
+  }
+}
