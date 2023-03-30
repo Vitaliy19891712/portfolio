@@ -17,7 +17,7 @@ function App() {
     setVisible(!visible);
   };
 
-const onClickHandler=()=>setVisible(false)
+  const onClickHandler = () => setVisible(false);
 
   let ikon = visible ? faXmark : faBars;
   let classToggle = visible ? style.toggleXmark : style.toggleBars;
