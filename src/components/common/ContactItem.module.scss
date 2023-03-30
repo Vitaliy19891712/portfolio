@@ -5,6 +5,10 @@
   display: flex;
   margin-top: 30px;
   padding: 30px;
+  @media (max-width: 370px) {
+    padding-left: 23px;
+    padding-right: 23px;
+  }
   .logo {
     margin-right: 20px;
     border: 1px solid #2e344e;
