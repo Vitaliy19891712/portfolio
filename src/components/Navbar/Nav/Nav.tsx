@@ -2,11 +2,16 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import style from "./Nav.module.scss";
 
-const Nav = () => {
+type PropsNavType = {
+  onClickHandler: () => void;
+};
+
+const Nav = (props: PropsNavType) => {
   return (
     <ul className={style.nav}>
       <li>
         <NavLink
+          onClick={props.onClickHandler}
           to={"/portfolio/"}
           className={({ isActive, isPending }) => {
             return isActive ? `${style.active}` : "";
@@ -17,6 +22,7 @@ const Nav = () => {
       </li>
       <li>
         <NavLink
+          onClick={props.onClickHandler}
           to={"/portfolio/about"}
           className={({ isActive, isPending }) => {
             return isActive ? `${style.active}` : "";
@@ -27,6 +33,7 @@ const Nav = () => {
       </li>
       <li>
         <NavLink
+          onClick={props.onClickHandler}
           to={"/portfolio/myskills"}
           className={({ isActive, isPending }) => {
             return isActive ? `${style.active}` : "";
@@ -37,6 +44,7 @@ const Nav = () => {
       </li>
       <li>
         <NavLink
+          onClick={props.onClickHandler}
           to={"/portfolio/myworks"}
           className={({ isActive, isPending }) => {
             return isActive ? `${style.active}` : "";
@@ -47,6 +55,7 @@ const Nav = () => {
       </li>
       <li>
         <NavLink
+          onClick={props.onClickHandler}
           to={"/portfolio/contacts"}
           className={({ isActive, isPending }) => {
             return isActive ? `${style.active}` : "";

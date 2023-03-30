@@ -5,6 +5,7 @@ import Photo from "./Photo/Photo";
 import style from "./Sidebar.module.scss";
 type PropsSidebarType = {
   visible: boolean;
+  onClickHandler:()=>void;
 };
 
 const Sidebar = (props: PropsSidebarType) => {
@@ -14,7 +15,7 @@ const Sidebar = (props: PropsSidebarType) => {
     <div className={classSidebarWrapper}>
       <div className={style.sidebar}>
         <Photo />
-        <Nav />
+        <Nav onClickHandler={ props.onClickHandler} />
         <Footer />
       </div>
     </div>
