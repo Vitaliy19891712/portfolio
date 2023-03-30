@@ -1,0 +1,38 @@
+@import "../../styles/scss/variables.scss";
+.button {
+  margin-top: 15px;
+  background: $mainColor;
+  border: 0;
+  color: $textMainColor;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.9rem;
+  height: 50px;
+  letter-spacing: 2px;
+  line-height: 50px;
+  padding: 0 30px;
+  position: relative;
+  text-transform: uppercase;
+  transition: all 0.4s ease-out;
+  z-index: 1;
+  &:before {
+    background: $textMainColor;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: auto;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: all 0.4s ease-out;
+    width: 100%;
+    z-index: -1;
+  }
+  &:hover {
+    color: $textMainColor;
+  }
+  &:hover::before {
+    transform: scaleX(1);
+  }
+}

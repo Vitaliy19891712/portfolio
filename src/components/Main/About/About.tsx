@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../../common/Button";
 import Title from "../../common/Title";
 import style from "./About.module.scss";
 const About = () => {
@@ -8,9 +9,7 @@ const About = () => {
         <Title title={"ОБО МНЕ"} />
         <div className={style.items}>
           <div className={style.photo}>
-            <div className={style.image}>
-              <img src="../../../assets/image.jpg" alt="" />
-            </div>
+            <div className={style.image}></div>
           </div>
           <div className={style.discription}>
             <div className={style.content}>
@@ -37,7 +36,7 @@ const About = () => {
                   <b>Город</b>Краснодар
                 </li>
               </ul>
-              <a href="">ЗАГРУЗИТЬ CV</a>
+              <Button name={"ЗАГРУЗИТЬ CV"} />
             </div>
           </div>
         </div>

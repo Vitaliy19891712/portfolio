@@ -1,0 +1,60 @@
+@import "../../styles/scss/variables.scss";
+
+.myskill {
+  margin-top: 30px;
+  padding-left: 12px;
+  padding-right: 12px;
+
+  @media (min-width: 768px) {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  @media (min-width: 992px) {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+  .container {
+    background: $bgSidebarColor;
+    border: 1px solid $borderColor;
+    border-top: 5px solid $borderColor;
+    padding: 30px;
+    transition: all 0.4s ease-out;
+    & span {
+      height: 100px;
+      width: 100px;
+    }
+    &:hover {
+      border-top-color: $mainColor;
+    }
+    & h5 {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      position: relative;
+      font-size: 1.43rem;
+      line-height: 2.14rem;
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: $textMainColor;
+      font-family: Nunito, sans-serif;
+      &:before {
+        background: #2e344e;
+        bottom: 0;
+        content: "";
+        height: 2px;
+        left: 0;
+        position: absolute;
+        top: auto;
+        width: 50px;
+      }
+    }
+    & p {
+      color: $textPrimaryColor;
+      font-family: Nunito, sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.8rem;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+}

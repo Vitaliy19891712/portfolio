@@ -1,9 +1,18 @@
-.header {
-  height: 10vh;
-  background-color: aquamarine;
-  .flex {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+@import "../../../styles/scss/variables.scss";
+@import "../../../styles/scss/mixins.scss";
+
+.myskills {
+  background-color: $bgMainColor;
+  min-height: 100vh;
+  padding-top: 120px;
+  padding-bottom: 50px;
+  .container {
+    @include container;
+    .flex {
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: -30px;
+    }
   }
 }

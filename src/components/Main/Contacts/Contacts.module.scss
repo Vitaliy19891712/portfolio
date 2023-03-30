@@ -1,9 +1,100 @@
-.header {
-  height: 10vh;
-  background-color: aquamarine;
-  .flex {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+@import "../../../styles/scss/variables.scss";
+@import "../../../styles/scss/mixins.scss";
+
+.contacts {
+  background-color: $bgMainColor;
+  min-height: 100vh;
+  padding-top: 120px;
+  padding-bottom: 50px;
+  .container {
+    @include container;
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      .formWrap {
+        flex-shrink: 0;
+        max-width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+        width: 100%;
+        @media (min-width: 992px) {
+          flex: 0 0 auto;
+          width: 50%;
+        }
+        & h4 {
+          font-weight: 500;
+          font-size: 1.71rem;
+          line-height: 2.43rem;
+          color: $textMainColor;
+          font-family: Nunito, sans-serif;
+        }
+        .formfield {
+          margin-top: 30px;
+          position: relative;
+          & label {
+            color: $textPrimaryColor;
+            font-family: Nunito, sans-serif;
+            display: inline-block;
+            background: $bgMainColor;
+            font-size: 0.94rem;
+            left: 15px;
+            padding: 0 10px;
+            pointer-events: none;
+            position: absolute;
+            top: -13px;
+            transition: all 0.4s ease-out;
+          }
+          & input {
+            border: 1px solid $borderColor;
+            font-size: 1rem;
+            height: 50px;
+            padding: 0 15px;
+            vertical-align: middle;
+            width: 100%;
+            background: transparent;
+            color: #a4acc4;
+            font-family: Nunito, sans-serif;
+            &:focus,
+            &:active {
+              outline: none;
+              border-color: $borderColor;
+            }
+          }
+          & textarea {
+            padding: 12px 15px;
+            height: 166px;
+            border: 1px solid $borderColor;
+            font-size: 1rem;
+            vertical-align: middle;
+            width: 100%;
+            background: transparent;
+            color: #a4acc4;
+            font-family: Nunito, sans-serif;
+            &:focus,
+            &:active {
+              outline: none;
+              border-color: $borderColor;
+            }
+          }
+        }
+      }
+      .contWrap {
+        flex-shrink: 0;
+        max-width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+        width: 100%;
+        @media (min-width: 992px) {
+          flex: 0 0 auto;
+          width: 50%;
+        }
+        .cont {
+          margin-top: -30px;
+          @media only screen and (max-width: 991px) {
+            margin-top: 50px;
+          }
+        }
+      }
+    }
   }
 }
