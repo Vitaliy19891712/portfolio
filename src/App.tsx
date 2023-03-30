@@ -28,11 +28,11 @@ let classToggle = visible ? style.toggleXmark : style.toggleBars;
         </i>
         <div className={style.main}>
           <Routes>
-            <Route path="portfolio/" element={<Home />} />
-            <Route path="portfolio/about" element={<About />} />
-            <Route path="portfolio/myskills" element={<MySkills />} />
-            <Route path="portfolio/myworks" element={<MyWorks />} />
-            <Route path="portfolio/contacts" element={<Contacts />} />
+            <Route path="/portfolio/" element={<Home />} />
+            <Route path="/portfolio/about" element={<About />} />
+            <Route path="/portfolio/myskills" element={<MySkills />} />
+            <Route path="/portfolio/myworks" element={<MyWorks />} />
+            <Route path="/portfolio/contacts" element={<Contacts />} />
           </Routes>
         </div>
       </div>

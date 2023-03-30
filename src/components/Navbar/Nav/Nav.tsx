@@ -7,7 +7,7 @@ const Nav = () => {
     <ul className={style.nav}>
       <li>
         <NavLink
-          to={"portfolio/"}
+          to={"/portfolio/"}
           className={({ isActive, isPending }) => {
             return isActive ? `${style.active}` : "";
           }}
@@ -17,7 +17,7 @@ const Nav = () => {
       </li>
       <li>
         <NavLink
-          to={"portfolio/about"}
+          to={"/portfolio/about"}
           className={({ isActive, isPending }) => {
             return isActive ? `${style.active}` : "";
           }}
@@ -27,7 +27,7 @@ const Nav = () => {
       </li>
       <li>
         <NavLink
-          to={"portfolio/myskills"}
+          to={"/portfolio/myskills"}
           className={({ isActive, isPending }) => {
             return isActive ? `${style.active}` : "";
           }}
@@ -37,7 +37,7 @@ const Nav = () => {
       </li>
       <li>
         <NavLink
-          to={"portfolio/myworks"}
+          to={"/portfolio/myworks"}
           className={({ isActive, isPending }) => {
             return isActive ? `${style.active}` : "";
           }}
@@ -47,7 +47,7 @@ const Nav = () => {
       </li>
       <li>
         <NavLink
-          to={"portfolio/contacts"}
+          to={"/portfolio/contacts"}
           className={({ isActive, isPending }) => {
             return isActive ? `${style.active}` : "";
           }}
