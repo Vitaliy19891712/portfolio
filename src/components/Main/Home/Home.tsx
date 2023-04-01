@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVk } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { NavLink } from "react-router-dom";
-// import { faVK } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
   return (

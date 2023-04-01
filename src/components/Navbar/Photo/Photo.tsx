@@ -1,10 +1,11 @@
 import React from "react";
 import style from "./Photo.module.scss";
+import { NavLink } from "react-router-dom";
 
 const Photo = () => {
   return (
     <div className={style.photo}>
-      <a href="/" className={style.wrapperPhoto}></a>
+      <NavLink to={"/portfolio"} className={style.wrapperPhoto}></NavLink>
     </div>
   );
 };

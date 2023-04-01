@@ -11,6 +11,8 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
 function App() {
+
+
   const [visible, setVisible] = useState(true);
 
   const onChangeVisible = () => {
@@ -21,6 +23,8 @@ function App() {
 
   let ikon = visible ? faXmark : faBars;
   let classToggle = visible ? style.toggleXmark : style.toggleBars;
+  let classMainHidden = visible ? `${style.mainHidden} ${style.main}` : style.main;
+
   return (
     <BrowserRouter>
       <div className={style.app}>
@@ -28,7 +32,7 @@ function App() {
         <i className={classToggle} onClick={onChangeVisible}>
           <FontAwesomeIcon icon={ikon} size="2xl" style={{ color: "#bbb" }} />
         </i>
-        <div className={style.main}>
+        <div className={classMainHidden}>
           <Routes>
             <Route path="/portfolio/" element={<Home />} />
             <Route path="/portfolio/about" element={<About />} />

@@ -1,7 +1,5 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
 
-import React from "react";
 import Button from "../../common/Button";
 import Title from "../../common/Title";
 import style from "./Contacts.module.scss";

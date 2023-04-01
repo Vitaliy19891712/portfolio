@@ -1,4 +1,18 @@
 @import "../src/styles/scss/variables.scss";
+*::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #383838;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  background-color: #383838;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #6b6b6b;
+}
 
 .app {
   .toggleBars {

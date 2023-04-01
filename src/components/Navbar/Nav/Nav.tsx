@@ -12,7 +12,7 @@ const Nav = (props: PropsNavType) => {
       <li>
         <NavLink
           onClick={props.onClickHandler}
-          to={"/portfolio/"}
+          to={"/portfolio"}
           className={({ isActive, isPending }) => {
             return isActive ? `${style.active}` : "";
           }}
