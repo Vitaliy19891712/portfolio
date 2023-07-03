@@ -14,8 +14,8 @@ const Sidebar = (props: PropsSidebarType) => {
   return (
     <div className={classSidebarWrapper}>
       <div className={style.sidebar}>
-        <Photo />
-        <Nav onClickHandler={ props.onClickHandler} />
+        <Photo onClickHandler={props.onClickHandler} />
+        <Nav onClickHandler={props.onClickHandler} />
         <Footer />
       </div>
     </div>

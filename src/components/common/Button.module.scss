@@ -1,4 +1,5 @@
 @import "../../styles/scss/variables.scss";
+
 .button {
   margin-top: 15px;
   background: $mainColor;
@@ -12,9 +13,11 @@
   line-height: 50px;
   padding: 0 30px;
   position: relative;
+  cursor: pointer;
   text-transform: uppercase;
   transition: all 0.4s ease-out;
   z-index: 1;
+
   &:before {
     background: $textMainColor;
     bottom: 0;
@@ -29,9 +32,11 @@
     width: 100%;
     z-index: -1;
   }
+
   &:hover {
     color: $textMainColor;
   }
+
   &:hover::before {
     transform: scaleX(1);
   }

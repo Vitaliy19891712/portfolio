@@ -11,8 +11,13 @@ const MyWorks = () => {
       <div className={style.container}>
         <Title title={"ПОРТФОЛИО"} />
         <div className={style.flex}>
-          <Mywork image={todolist} title={"Todolist"} text={"Таск-менеджер"} />
-          <Mywork image={sn} title={"Social network"} text={"Для общения с родными, друзьями и знакомыми"} />
+          <Mywork image={todolist} title={"Todolist"} text={"Таск-менеджер"} link={"https://github.com/Vitaliy19891712/1-todolist"} />
+          <Mywork
+            image={sn}
+            title={"Social network"}
+            text={"Для общения с родными, друзьями и знакомыми"}
+            link={"https://github.com/Vitaliy19891712/samurai-way-1"}
+          />
         </div>
       </div>
     </div>

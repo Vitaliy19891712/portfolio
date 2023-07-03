@@ -17,7 +17,10 @@ const About = () => {
                 Меня зовут <span>Виталий Мурафа</span>
               </h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente quidem maxime deleniti recusandae fuga, voluptatibus cupiditate,
+                Мой основной фокус - это создание веб-приложений с использованием HTML, CSS, JavaScript и Typescript. Я уверенно работаю с различными
+                библиотеками, такими как React, Redux ToolKit, RTKQuery и имею опыт в интеграции с серверными API. Сейчас я совершенствую свои навыки
+                и планирую расширить их такими технологиями как Angular и React Native. В свободное время обычно провожу за чтением IT- литературы и
+                улучшением моего уровня английского.
               </p>
               <ul>
                 <li>
@@ -36,7 +39,9 @@ const About = () => {
                   <b>Город</b>Краснодар
                 </li>
               </ul>
-              <Button name={"ЗАГРУЗИТЬ CV"} />
+              <a href="http://localhost:3010/Resume.pdf" download target="_blank">
+                ЗАГРУЗИТЬ CV
+              </a>
             </div>
           </div>
         </div>

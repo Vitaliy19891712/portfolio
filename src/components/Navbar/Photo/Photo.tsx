@@ -2,10 +2,13 @@ import React from "react";
 import style from "./Photo.module.scss";
 import { NavLink } from "react-router-dom";
 
-const Photo = () => {
+type PropsPhotoType = {
+  onClickHandler: () => void;
+};
+const Photo = (props: PropsPhotoType) => {
   return (
     <div className={style.photo}>
-      <NavLink to={"/portfolio"} className={style.wrapperPhoto}></NavLink>
+      <NavLink onClick={props.onClickHandler} to={"/portfolio"} className={style.wrapperPhoto}></NavLink>
     </div>
   );
 };

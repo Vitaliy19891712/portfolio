@@ -1,14 +1,15 @@
+import { FormEvent } from "react";
 import style from "./Button.module.scss";
 
 type PropsButtonType = {
   name: string;
 };
 
-const Button = (props: PropsButtonType) => {
+const Button: React.FC<PropsButtonType> = ({ name }) => {
   return (
-    <a className={style.button} href="">
-      {props.name}
-    </a>
+    <button className={style.button} type="submit" formNoValidate={true}>
+      {name}
+    </button>
   );
 };
 

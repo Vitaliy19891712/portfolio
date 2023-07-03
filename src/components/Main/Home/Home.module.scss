@@ -1,12 +1,17 @@
 @import "../../../styles/scss/variables.scss";
 
 .home {
-  background-color: $bgMainColor;
+  // background-color: $bgMainColor;
   align-items: center;
   display: flex;
   justify-content: center;
   min-height: 100vh;
+
+
+
   .container {
+    position: relative;
+    z-index: 2;
     margin-left: auto;
     margin-right: auto;
 
@@ -14,21 +19,25 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+
       .flex {
         flex: 0 0 auto;
         width: 83.33333333%;
         padding: 50px 0;
         text-align: center;
+
         & h1 {
           font-weight: 700;
           font-size: 3.2857rem;
           line-height: 4rem;
           color: $textMainColor;
           font-family: Nunito, sans-serif;
-          & span {
+
+          & .name {
             color: $mainColor;
           }
         }
+
         & p {
           font-size: 1.25rem;
           line-height: 2rem;
@@ -37,14 +46,21 @@
           color: $textPrimaryColor;
           // media
         }
+
         & ul {
           margin-top: 20px;
           margin-bottom: 0;
           padding-left: 0;
+
           & li {
             display: inline-block;
             list-style: none;
             margin: 0 8px;
+            transition: 0.5s;
+
+            &:hover {
+              transform: scale(1.2, 1.2)
+            }
           }
         }
       }

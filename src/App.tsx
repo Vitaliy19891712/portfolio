@@ -11,8 +11,6 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
 function App() {
-
-
   const [visible, setVisible] = useState(true);
 
   const onChangeVisible = () => {
