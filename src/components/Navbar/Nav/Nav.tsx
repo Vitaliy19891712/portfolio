@@ -18,7 +18,7 @@ const Nav = (props: PropsNavType) => {
             return isActive ? `${style.active}` : "";
           }}
         >
-          <span>Главная</span>{" "}
+          <span>Главная</span>
         </NavLink>
       </li>
       <li>
