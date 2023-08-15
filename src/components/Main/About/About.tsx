@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../../common/Button";
 import Title from "../../common/Title";
 import style from "./About.module.scss";
 const About = () => {
@@ -39,7 +38,7 @@ const About = () => {
                   <b>Город</b>Краснодар
                 </li>
               </ul>
-              <a href="http://localhost:3010/Resume.pdf" download target="_blank">
+              <a href="http://localhost:3010/Resume.pdf" download target="_blank" rel="noreferrer">
                 ЗАГРУЗИТЬ CV
               </a>
             </div>
