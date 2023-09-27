@@ -12,7 +12,7 @@ const Nav = (props: PropsNavType) => {
       <li>
         <NavLink
           onClick={props.onClickHandler}
-          to={"/portfolio"}
+          to={""}
           end
           className={({ isActive }) => {
             return isActive ? `${style.active}` : "";
@@ -24,7 +24,7 @@ const Nav = (props: PropsNavType) => {
       <li>
         <NavLink
           onClick={props.onClickHandler}
-          to={"/portfolio/about"}
+          to={"/about"}
           className={({ isActive }) => {
             return isActive ? `${style.active}` : "";
           }}
@@ -35,7 +35,7 @@ const Nav = (props: PropsNavType) => {
       <li>
         <NavLink
           onClick={props.onClickHandler}
-          to={"/portfolio/myskills"}
+          to={"/myskills"}
           className={({ isActive }) => {
             return isActive ? `${style.active}` : "";
           }}
@@ -46,7 +46,7 @@ const Nav = (props: PropsNavType) => {
       <li>
         <NavLink
           onClick={props.onClickHandler}
-          to={"/portfolio/myworks"}
+          to={"/myworks"}
           className={({ isActive }) => {
             return isActive ? `${style.active}` : "";
           }}
@@ -57,7 +57,7 @@ const Nav = (props: PropsNavType) => {
       <li>
         <NavLink
           onClick={props.onClickHandler}
-          to={"/portfolio/contacts"}
+          to={"/contacts"}
           className={({ isActive }) => {
             return isActive ? `${style.active}` : "";
           }}

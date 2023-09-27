@@ -8,7 +8,7 @@ type PropsPhotoType = {
 const Photo = (props: PropsPhotoType) => {
   return (
     <div className={style.photo}>
-      <NavLink onClick={props.onClickHandler} to={"/portfolio"} className={style.wrapperPhoto}></NavLink>
+      <NavLink onClick={props.onClickHandler} to={""} className={style.wrapperPhoto}></NavLink>
     </div>
   );
 };

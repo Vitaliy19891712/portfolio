@@ -32,11 +32,11 @@ function App() {
         </i>
         <div className={classMainHidden}>
           <Routes>
-            <Route path="/portfolio/" element={<Home />} />
-            <Route path="/portfolio/about" element={<About />} />
-            <Route path="/portfolio/myskills" element={<MySkills />} />
-            <Route path="/portfolio/myworks" element={<MyWorks />} />
-            <Route path="/portfolio/contacts" element={<Contacts />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/myskills" element={<MySkills />} />
+            <Route path="/myworks" element={<MyWorks />} />
+            <Route path="/contacts" element={<Contacts />} />
           </Routes>
         </div>
       </div>
