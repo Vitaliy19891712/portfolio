@@ -4,7 +4,7 @@ import Title from "../../common/Title";
 import style from "./Contacts.module.scss";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import ContactItem from "../../common/ContactItem";
-import { ChangeEvent, ChangeEventHandler, FormEvent, FormEventHandler, useState } from "react";
+import { ChangeEvent,  FormEvent,  useState } from "react";
 import Stack from "@mui/material/Stack";
 import Snackbar from "@mui/material/Snackbar";
 import MuiAlert, { AlertProps } from "@mui/material/Alert";
@@ -63,7 +63,7 @@ const Contacts = () => {
   const handleSubmit = (e: FormEvent<YourFormElement>) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3010/sendMessage", {
+      .post("https://express-product-jom11bq6e-vitaliy19891712.vercel.app/sendMessage", {
         name: e.currentTarget.elements.name.value,
         phone: e.currentTarget.elements.phone.value,
         email: e.currentTarget.elements.email.value,
