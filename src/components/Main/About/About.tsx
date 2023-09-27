@@ -38,7 +38,7 @@ const About = () => {
                   <b>Город</b>Краснодар
                 </li>
               </ul>
-              <a href="http://localhost:3010/Resume.pdf" download target="_blank" rel="noreferrer">
+              <a href="http://express-product.vercel.app/Resume.pdf" download target="_blank" rel="noreferrer">
                 ЗАГРУЗИТЬ CV
               </a>
             </div>
