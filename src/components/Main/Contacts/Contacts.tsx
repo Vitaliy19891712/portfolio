@@ -63,7 +63,7 @@ const Contacts = () => {
   const handleSubmit = (e: FormEvent<YourFormElement>) => {
     e.preventDefault();
     axios
-      .post("https://express-product-jom11bq6e-vitaliy19891712.vercel.app/sendMessage", {
+      .post("https://https://express-product.vercel.app//sendMessage", {
         name: e.currentTarget.elements.name.value,
         phone: e.currentTarget.elements.phone.value,
         email: e.currentTarget.elements.email.value,
